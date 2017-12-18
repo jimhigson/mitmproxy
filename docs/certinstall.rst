@@ -39,13 +39,22 @@ documentation for some common platforms.
 The mitmproxy CA cert is located in ``~/.mitmproxy`` after it has been generated at the first
 start of mitmproxy.
 
-
 iOS
 ^^^
 
 See http://jasdev.me/intercepting-ios-traffic
 
 and https://web.archive.org/web/20150920082614/http://kb.mit.edu/confluence/pages/viewpage.action?pageId=152600377
+
+On iOS 10.3 and onwards, you also need to enable full trust for the mitm root certificate.
+
+Install the mitm root cert as usual from http://mitm.it
+
+1. Open the Settings app
+2. Tap General
+3. Tap About
+4. Scroll to bottom. Tap Certificate Trust Settings
+5. Turn on the switch for mitmproxy
 
 iOS Simulator
 ^^^^^^^^^^^^^
